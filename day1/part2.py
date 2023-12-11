@@ -1,7 +1,7 @@
 import sys
 import re
 
-regex = re.compile(r'\d|one|two|three|four|five|six|seven|eight|nine')
+regex = re.compile(r'(?=(\d|one|two|three|four|five|six|seven|eight|nine))')
 
 numbers = {
     'one': '1',
