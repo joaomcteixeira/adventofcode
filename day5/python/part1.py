@@ -32,11 +32,11 @@ def main(input_):
         elif line[0].isdigit():
             maps[-1].append(tuple(map(int, line.split())))
 
-    locations = []
-    for seed in seeds:
-        locations.append(lookup(maps, seed, 0))
+    #locations = []
+    #for seed in seeds:
+    #    locations.append(lookup(maps, seed, 0))
 
-    return min(locations)
+    return min(lookup(maps, seed, 0) for seed in seeds)
 
 if __name__ == '__main__':
     print(main(sys.argv[1]))
