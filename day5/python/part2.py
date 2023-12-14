@@ -1,9 +1,8 @@
 import sys
 import os
-from pathlib import Path
-from matplotlib import pyplot as plt
 from math import inf
 from operator import add, sub
+from pathlib import Path
 
 
 def lookup(maps, code, map_idx):
